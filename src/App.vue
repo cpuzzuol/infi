@@ -10,8 +10,14 @@
       </v-toolbar-items>
     </v-toolbar>
     <v-content>
-      <h1>BOB <span>dances</span></h1>
-      <router-view/>
+      <v-container>
+        <v-layout row wrap>
+          <v-flex xs12>
+            <h1>INfinity FInance</h1>
+          </v-flex>
+        </v-layout>
+        <router-view/>
+      </v-container>
     </v-content>
     <v-navigation-drawer
             temporary
@@ -61,40 +67,10 @@
     margin: 0;
   }
 
-  h1 {
-    span{
-      color: red;
-    }
-    color: blue;
-  }
   #app {
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: #2c3e50;
-  }
-
-  main {
-    text-align: center;
-    margin-top: 40px;
-  }
-
-  header {
-    margin: 0;
-    height: 56px;
-    padding: 0 16px 0 24px;
-    background-color: #35495E;
-    color: #ffffff;
-  }
-
-  header span {
-    display: block;
-    position: relative;
-    font-size: 20px;
-    line-height: 1;
-    letter-spacing: .02em;
-    font-weight: 400;
-    box-sizing: border-box;
-    padding-top: 16px;
   }
 </style>

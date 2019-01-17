@@ -6,7 +6,8 @@ Vue.use(Vuex);
 export default new Vuex.Store({
   state: {
     transactions: [],
-    categories: []
+    categories: [],
+    types: ['Inflows', 'Outflows', 'Allocations']
   },
   mutations: {
     setCategories(state, categories){
@@ -18,8 +19,6 @@ export default new Vuex.Store({
   },
   actions: {
     async setCategories({commit}, categories){
-      console.log("CATEGORIES: ")
-      console.log(categories)
       commit('setCategories', categories)
       //return Promise.resolve()
     },
